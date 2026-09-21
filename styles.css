@@ -262,7 +262,12 @@ button { font: inherit; }
 @media (max-width: 700px) {
   .site-shell { width: 100%; }
   .rail { display: none; }
+  .brand { width: min(250px, 72vw); }
+  .brand img { width: 100%; height: auto; max-height: 82px; }
+  .topbar { padding-bottom: 18px; }
+  .shell-header { padding-left: 8px; padding-right: 8px; }
   .page-shell { padding-left: 11px; padding-right: 11px; }
+  .page-title { font-size: 1.15rem; overflow-wrap: anywhere; }
   .directory-block h2 { font-size: 1.1rem; }
   .link-grid { gap: 4px; }
   .link-grid a { padding: 3px 5px; font-size: 0.78rem; }
@@ -281,6 +286,14 @@ button { font: inherit; }
   .primary-nav.is-open { display: flex; }
   .burger { display: block; }
   .nav-actions { justify-content: center; }
+}
+@media (max-width: 420px) {
+  .page-shell { padding-top: 22px; }
+  .primary-nav { top: 64px; }
+  .nav-actions { gap: 6px; }
+  .link-btn { min-width: 62px; padding-left: 7px; padding-right: 7px; }
+  .page-title { font-size: 1.05rem; }
+  .section-lead { font-size: 0.88rem; }
 }
 .left-rail { left: 0; width: 52px; }
 .right-rail { right: 0; width: 52px; }
