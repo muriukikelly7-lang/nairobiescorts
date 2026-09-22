@@ -260,11 +260,12 @@ button { font: inherit; }
   .nav-actions, .primary-nav, .secondary-nav { justify-content: center; }
 }
 @media (max-width: 700px) {
-  .site-shell { width: 100%; }
+  .site-shell { width: calc(100% - 16px); }
   .rail { display: none; }
   .brand { width: min(250px, 72vw); }
   .brand img { width: 100%; height: auto; max-height: 82px; }
   .topbar { padding-bottom: 18px; }
+  .site-shell { width: calc(100% - 16px); }
   .shell-header { padding-left: 8px; padding-right: 8px; }
   .page-shell { padding-left: 11px; padding-right: 11px; }
   .page-title { font-size: 1.15rem; overflow-wrap: anywhere; }
